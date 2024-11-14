@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+        }
+        .main{
+            border: 1px solid;
+            height: 290px;
+            width: 200px;
+            border-radius: 5px;
+            background-color: rgb(240, 201, 155);
+        }
+        .p2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 30%;
+            border: 0px solid;
+        }
+        #p3{
+            border: 1px solid transparent;
+            height: 35%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .p31{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 45%;
+            border: 1px solid transparent;
+        }
+        .p32{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 55%;
+            border: 1px solid transparent;
+        }
+        .si{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pr1{
+            width: 100%;
+            height: 20%;
+            align-items: center;
+            margin-left: 3px;
+        }
+        .la{
+            border: 1px solid;
+            height: 12%;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: rgb(50, 49, 49);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div id="tp"> 
+        </div>
+        <div class="si">
+            <b id="pa1"></b>
+
+        </div>
+        <div class="p2">
+            <img id="im2">
+        </div>
+        <div id="p3">
+            <div class="p31">
+                <div class="pr1"><p id="p311"></p></div>
+                <div class="pr1"><p id="p312"></p></div>
+                <div class="pr1"><p id="p313"></p></div>
+                <div class="pr1"><p id="p314"></p></div>
+            </div>
+            <div class="p32">
+                <div class="pr1"><p id="p321"></p></div>
+                <div class="pr1"><p id="p322"></p></div>
+                <div class="pr1"><p id="p323"></p></div>
+                <div class="pr1"><p id="p324"></p></div>
+            </div>
+        </div>
+        <div class="la">
+            <div id="la1"><p id="pa3"></p></div>
+        </div>
+        
+
+
+    </div>
+
+
+    
+</body>
+<script>
+    let im1=document.getElementById("im1");
+    let t = document.getElementById("tp");
+    t.innerHTML="<b>10000 Coders</b>";
+    t.style.width="100%";
+    t.style.height="13%";
+    t.style.display="flex";
+    t.style.justifyContent="center";
+    t.style.alignItems="center";
+    t.style.backgroundColor="orange";
+    t.style.borderRadius="5px";
+
+    let im2=document.getElementById("im2");
+    im2.setAttribute("src","./pic.jpg");
+    im2.style.height="70px";
+    im2.style.borderRadius="20%"
+    im2.style.border="3px solid orange"
+    
+    let p2=document.getElementsByClassName("p2");
+
+    let pa1=document.getElementById("pa1");
+    pa1.innerHTML="<b>Student ID</b>";
+
+    let pa11=document.getElementById("p311");
+    let pa12=document.getElementById("p312");
+    let pa13=document.getElementById("p313");
+    let pa14=document.getElementById("p314");
+    pa11.innerHTML="<b>Name     </b>";
+    pa12.innerHTML="<b>Batch No </b>";
+    pa13.innerHTML="<b>Number </b>";
+    pa14.innerHTML="<b>Blood Group</b>";
+    let pa21=document.getElementById("p321");
+    let pa22=document.getElementById("p322");
+    let pa23=document.getElementById("p323");
+    let pa24=document.getElementById("p324");
+    pa21.innerHTML="<b>: Narasimha</b>";
+    pa22.innerHTML="<b>: 23R</b>";
+    pa23.innerHTML="<b>: 8522007578</b>";
+    pa24.innerHTML="<b>: A+</b>";
+
+    let pa3=document.getElementById("pa3");
+    pa3.innerHTML="<b>Metro station, mig 214, Rd Number 1, behind kphb, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500072</b>";
+    pa3.style.color="white";
+    pa3.style.fontSize="8px";
+    pa3.style.marginTop="0px";
+    pa3.style.marginLeft="10px";
+</script>
+</html>
